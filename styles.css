@@ -5,5 +5,38 @@
 }
 
 body {
+  letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo h4 {
+  font-size: 20px;
+  color: rgb(254, 81, 81);
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.menu a {
+  color: rgb(254, 81, 81);
 }
