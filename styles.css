@@ -29,7 +29,7 @@ nav {
 
 .logo h4 {
   font-size: 20px;
-  color: rgb(254, 81, 81);
+  color: #ff5a5f;
 }
 
 .menu li {
@@ -41,5 +41,145 @@ nav {
 }
 
 .menu a {
-  color: rgb(254, 81, 81);
+  color: #ff5a5f;
+}
+
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.three-blocks {
+  display: flex;
+  background: #fff;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  max-width: 75%;
+}
+
+.block.block-left {
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  min-height: 320px;
+}
+
+.stacked-blocks {
+  text-align: center;
+  width: 50%;
+}
+
+.block-top {
+  transition: all 0.3s;
+  height: 20rem;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/Images/phone-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-bottom {
+  transition: all 0.3s;
+  height: 20rem;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/Images/couple.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-content {
+  opacity: 0;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s;
+  flex-direction: column;
+  background: #ff5a5f;
+  height: 100%;
+  width: 100%;
+}
+
+.block-content:hover {
+  opacity: 1;
+}
+
+.block-content h3,
+.block-content p {
+  color: #fff;
+}
+
+.block-content h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.left-block-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.left-block-content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.left-block-content p {
+  margin-bottom: 2rem;
+}
+
+.left-block-content a {
+  background: #ff5a5f;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #ff5a5f;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  font-size: 18px;
+}
+
+.price {
+  margin-top: 1rem;
+}
+
+.icon-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .three-blocks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block.block-left {
+    width: 100%;
+  }
+
+  .stacked-blocks {
+    width: 100%;
+  }
 }
