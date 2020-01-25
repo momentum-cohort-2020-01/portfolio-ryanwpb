@@ -9,6 +9,10 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -45,7 +49,6 @@ nav {
 }
 
 .header {
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,8 +84,8 @@ nav {
   height: 20rem;
   cursor: pointer;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/Images/phone-1.jpg");
-  background-position: center;
+    url("ryan.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -92,7 +95,7 @@ nav {
   height: 20rem;
   cursor: pointer;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/Images/couple.jpg");
+    url("laptop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,6 +176,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 90%;
   }
 
   .block.block-left {
