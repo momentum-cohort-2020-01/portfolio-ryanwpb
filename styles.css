@@ -2,11 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
 }
 
 body {
   letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
+  color: rgba(55, 71, 124);
 }
 
 a {
@@ -33,7 +35,6 @@ nav {
 
 .logo h4 {
   font-size: 20px;
-  color: #ff5a5f;
 }
 
 .menu li {
@@ -42,10 +43,6 @@ nav {
 
 .menu li:not(:last-child) {
   margin-right: 2rem;
-}
-
-.menu a {
-  color: #ff5a5f;
 }
 
 .header {
@@ -111,7 +108,7 @@ nav {
   width: 100%;
   transition: all 0.3s;
   flex-direction: column;
-  background: #ff5a5f;
+  background: rgba(55, 71, 124);
   height: 100%;
   width: 100%;
 }
@@ -252,6 +249,62 @@ img.writers-face {
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+}
+
+.left-side {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.resume-img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.resume-title {
+  text-align: center;
+}
+
+.resume-title h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.resume-title p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.credentials {
+  margin-top: 1rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.info i {
+  margin-right: 10px;
+  color: #ccc;
+}
+
+button {
+  background: #3253d2;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
 }
 
 /* Media Queries */
