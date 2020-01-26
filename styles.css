@@ -244,6 +244,16 @@ img.writers-face {
   font-weight: 200;
 }
 
+/* Resume Page Css */
+.resume {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   .three-blocks {
