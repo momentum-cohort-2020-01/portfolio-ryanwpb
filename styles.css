@@ -295,7 +295,8 @@ img.resume-img {
   border-bottom: solid 1px #abb3ca;
 }
 
-.info i {
+.info i,
+.job i {
   margin-right: 10px;
   color: #abb3ca;
 }
@@ -324,6 +325,42 @@ h2.title {
 .experience:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bubble {
+  background: rgba(213, 242, 217);
+  padding: 5px;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.job-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.desc-left,
+.desc-right {
+  display: flex;
+  align-items: center;
+}
+
+p.margin-right-sm {
+  margin-right: 1rem;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   .three-blocks {
@@ -339,5 +376,16 @@ h2.title {
 
   .stacked-blocks {
     width: 100%;
+  }
+
+  .resume {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    margin-bottom: 3rem;
   }
 }
