@@ -84,8 +84,8 @@ nav {
   height: 20rem;
   cursor: pointer;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("ryan.jpg");
-  background-position: top;
+    url("face.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -185,7 +185,8 @@ nav {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   overflow: hidden;
-  transition: all 0.4s;
+  transition: all 0.3s ease;
+  display: flex;
 }
 
 .project-card:hover {
@@ -202,6 +203,45 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.project-img.top {
+  background-image: url("flowers.jpg");
+}
+
+.project-img.bottom {
+  background-image: url("laptop.jpg");
+}
+
+.project-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.project-desc-top {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.project-desc-bottom {
+  padding-left: 1rem;
+}
+
+img.writers-face {
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.author {
+  font-size: 15px;
+  font-weight: 200;
 }
 
 /* Media Queries */
