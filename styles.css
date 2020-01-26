@@ -250,6 +250,7 @@ img.writers-face {
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   padding: 3rem;
+  display: flex;
 }
 
 .left-side {
@@ -258,6 +259,7 @@ img.writers-face {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 img.resume-img {
@@ -290,12 +292,12 @@ img.resume-img {
   align-items: center;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px #abb3ca;
 }
 
 .info i {
   margin-right: 10px;
-  color: #ccc;
+  color: #abb3ca;
 }
 
 button {
@@ -307,6 +309,21 @@ button {
   margin-top: 1rem;
 }
 
+.right-side {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2.title {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.experience:not(:last-child) {
+  margin-bottom: 1rem;
+}
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   .three-blocks {
